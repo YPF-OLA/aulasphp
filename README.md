@@ -1,2 +1,2 @@
 # aulasphp
- Atividades de programação PHP
+ Atividades de programação PHP.
