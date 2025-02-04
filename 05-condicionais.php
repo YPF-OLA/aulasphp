@@ -9,7 +9,18 @@
     <h1>Estruturas Condicionais</h1>
     <hr>
 
-    <h2>Simples</h2>
+    <h2>Simples usando <code>if</code></h2>
+    
+    
+<?php
+$numero = 5;
+
+if($numero > 5){
+    echo "<p>$numero é maior que 1</p>";
+}
+
+if($numero > 1) echo "<p>$numero é maior que 1</p>"
+?>
 
     <h2>Completa</h2>
 
