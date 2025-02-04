@@ -34,5 +34,19 @@ echo "<p><mark>$usuario->nome</mark></p>";
     <p>Idade: <?=$usuario->idade?> anos</p>
     <p>Telefone: <?=$usuario->telefones[1]?></p>
 
+    <hr>
+
+
+    <h2>Convertendo um objeto em um array associativo</h2>
+<?php
+
+$arrayUsuario = (array) $usuario;
+
+?>
+
+     <h3>Analisando o array gerado a partir de um objeto</h3>
+    <pre><?=var_dump($arrayUsuario)?></pre>
+
+
 </body>
 </html>
