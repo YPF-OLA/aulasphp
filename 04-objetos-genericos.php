@@ -11,9 +11,28 @@
 <?php
 /* Criando uma instância de uma classe genéricas chamada stdClass (Standar Class)  */
 $usuario = new stdClass(); // instâcia ou objeto
+
+// Adicionando propriedades/atributos ao objeto
+$usuario  -> nome = "Chaves";
+$usuario  -> idade = 35;
+$usuario  -> email = "chaves243@gmail.com";
+$usuario  -> telefones = ["11-91111-1111", "11-4002-8922"];
+
+echo $usuario->nome;
+
+echo "<p><mark>$usuario->nome</mark></p>";
+
+
 ?>
 
     <h2>Analisando a estrutura do objeto</h2>
     <pre><?=var_dump($usuario)?></pre>
+    <hr>
+
+    <h2>Saída de dados</h2>
+    <p>Nome: <?=$usuario->nome?></p>
+    <p>Idade: <?=$usuario->idade?> anos</p>
+    <p>Telefone: <?=$usuario->telefones[1]?></p>
+
 </body>
 </html>
