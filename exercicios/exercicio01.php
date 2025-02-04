@@ -24,7 +24,7 @@ $data = date("d/m/Y");
 $hora = date("H:i");
 echo $data. " - ". $hora;
 
-const NOME = "Tiago";
+const NOME = "Ygor";
 $curso = "Modelagem de Dados";
 $cargaHoraria = 100;
 $limiteDeFaltas = $cargaHoraria * 0.25; // ou $cargaHoraria / 4
