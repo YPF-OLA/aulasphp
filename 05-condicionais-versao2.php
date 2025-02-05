@@ -71,18 +71,18 @@
     <!-- Verificar a idade de uma pessoa e determinar se ela é criança, adolecente, adulta ou idosa. -->
 
     <?php
-    $idade = 60;
+    $idade = 5;
     if ($idade <= 12) {
-        echo "<p>Criança🧛</p>";
+        $texto = "Criança🧛";
     } elseif ($idade <= 17) {
-        echo "<p>Adolescente</p>";
+        $texto = "Adolescente";
     } elseif ($idade <= 59) {
-        echo "<p>Adulto</p>";
+        $texto = "Adulto</p>";
     } else {
-        echo "<p>Idoso</p>";
+        $texto = "Idoso</p>";
     }
     ?>
-
+<p><?=$texto?></p>
 </body>
 
 </html>
