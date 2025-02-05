@@ -22,7 +22,7 @@ if($numero > 5){
 if($numero > 1) echo "<p>$numero é maior que 1</p>"
 ?>
 
-    <h2>Completa</h2>
+    <h2>Composta</h2>
 <?php
 $produto = "Ultrabook Asus";
 $qtdEmEstoque = 10; // o que temos
