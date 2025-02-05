@@ -77,9 +77,9 @@
     } elseif ($idade <= 17) {
         $texto = "Adolescente";
     } elseif ($idade <= 59) {
-        $texto = "Adulto</p>";
+        $texto = "Adulto";
     } else {
-        $texto = "Idoso</p>";
+        $texto = "Idoso";
     }
     ?>
 <p><?=$texto?></p>
