@@ -15,9 +15,13 @@
     $faltas = 10;
 
     if ($media >= 7 && $faltas <= 10) {
-        echo "<p>Aprovado!</p>";
+    ?>
+        <p>Aprovado!</p>
+    <?php
     } else {
-        echo "<p>Reprovado!</p>";
+    ?>
+        <p>Reprovado!</p>
+    <?php
     }
     ?>
     <hr>
@@ -29,9 +33,13 @@
     $temCupom = false;
 
     if ($clienteVIP || $temCupom) {
-        echo "<p>Desconto aplicado!</p>";
+    ?>
+        <p>Desconto aplicado!</p>
+    <?php
     } else {
-        echo "<p>Sem desconto!</p>";
+    ?>
+        <p>Sem desconto!</p>
+    <?php
     }
     ?>
 
@@ -45,33 +53,41 @@ Caso contrario, exibir uma saudação. */
     $usuarioLogado = true;
 
     if (!$usuarioLogado) {
-        echo "<a href=\"login.php\">Login</a>";
+    ?>
+        <a href="login.php">Login</a>
+    <?php    
     } else {
-        echo "<span>Bem-vindo ao sistema!</span>";
+    ?>
+       <span>Bem-vindo ao sistema!</span>
+    <?php
     }
 
     ?>
 
     <hr>
     <h2>Usando os operadores combinados para uma lógica mais elaborada</h2>
-<?php
-/* Para entrar em uma festa é necessário atender os seguintes critérios:
+    <?php
+    /* Para entrar em uma festa é necessário atender os seguintes critérios:
 
 - Idade mínima de 18 anos
 - Ou estar acompanhado dos pais
-- E não estar bêbado */   
+- E não estar bêbado */
 
-// Variáveis
-$idade = 18;
-$acompanhandoDosPais = true;
-$estaBebado = true;
+    // Variáveis
+    $idade = 18;
+    $acompanhandoDosPais = true;
+    $estaBebado = true;
 
-if( ($idade >= 18 || $acompanhandoDosPais) && !$estaBebado) {
-    echo "<p>Entrada permitida!</p>";
-} else {
-    echo "<p>Entrada negada!</p>";
-}
-?>
+    if (($idade >= 18 || $acompanhandoDosPais) && !$estaBebado) {
+    ?>    
+        <p>Entrada permitida!</p>
+    <?php
+    } else {
+    ?>
+       <p>Entrada negada!</p>
+    <?php
+    }
+    ?>
 
 
 
