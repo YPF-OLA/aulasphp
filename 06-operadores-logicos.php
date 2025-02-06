@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP - Operadores Lógicos</title>
-    <hr>
+</head>
+
+<body>
 
     <h2>&& (E/AND)</h2>
     <p><i>Todas as condições precisam ser <b>VERDADEIRAS/TRUE</b></i></p>
@@ -55,10 +57,10 @@ Caso contrario, exibir uma saudação. */
     if (!$usuarioLogado) {
     ?>
         <a href="login.php">Login</a>
-    <?php    
+    <?php
     } else {
     ?>
-       <span>Bem-vindo ao sistema!</span>
+        <span>Bem-vindo ao sistema!</span>
     <?php
     }
 
@@ -79,21 +81,17 @@ Caso contrario, exibir uma saudação. */
     $estaBebado = true;
 
     if (($idade >= 18 || $acompanhandoDosPais) && !$estaBebado) {
-    ?>    
+    ?>
         <p>Entrada permitida!</p>
     <?php
     } else {
     ?>
-       <p>Entrada negada!</p>
+        <p>Entrada negada!</p>
     <?php
     }
     ?>
 
 
-
-</head>
-
-<body>
 
 </body>
 
