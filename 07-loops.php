@@ -101,6 +101,26 @@ foreach( $alunos as $alunos ) {
 }
 ?>
 
+<h3>Acessando array associativo</h3>
+
+<?php
+$clubes = [
+    "Corinthians" => "Timão",
+    "Palmeiras" => "Porco",
+    "São Paulo" => "Tricolor",
+    "Santos" => "Peixe"
+];
+
+foreach($clubes as $clubes => $apelido) {
+?>
+   <p>O clobe <?=$clubes?> é conhecido como <?=$apelido?></p>
+
+<?php
+}
+
+
+?>
+
 
 </body>
 </html>
