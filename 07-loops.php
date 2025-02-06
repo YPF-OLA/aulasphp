@@ -116,9 +116,19 @@ foreach($clubes as $clubes => $apelido) {
    <p>O clobe <?=$clubes?> é conhecido como <?=$apelido?></p>
 
 <?php
+}?>
+<hr>
+<?php
+$livro = new stdClass();
+$livro->titulo = "Senhor dos Anéis: A Sociedade do Anél";
+$livro->autor = "J.R.R Tolkien";
+$livro->ano = 1954;
+
+foreach($livro as $propriedade => $valor){
+?>
+   <p><?=$propriedade?>: <b><?=$valor?></b></p>
+<?php
 }
-
-
 ?>
 
 
