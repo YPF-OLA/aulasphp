@@ -19,9 +19,23 @@ if ($media >= 7 && $faltas <= 10){
     echo "<p>Reprovado!</p>";
 }
 ?>
+<hr>
     <!-- O símbolo | é chamado de pipe -->
     <h2>|| (OU/OR)</h2>
+<?php
+/* Dar um desconto a um cliente que seja VIP ou que tenha cupom */
+$clienteVIP = false; // valor/tipo lógico/boolean
+$temCupom = false;
 
+if ($clienteVIP || $temCupom) {
+    echo "<p>Desconto aplicado!</p>";
+} else {
+    echo "<p>Sem desconto!</p>";
+}
+
+
+?>
+<hr>
     <h2>! (NÃO/NOT)</h2>
 
 </head>
