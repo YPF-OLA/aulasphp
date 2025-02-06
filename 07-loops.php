@@ -83,14 +83,24 @@ $meses = array(
        
         <li><?=$meses[$y]?></li>
        
-    <?php 
-        
-    }
-    ?>
-
-
-
+    <?php }?>
 </ol>
+
+<hr>
+
+<h2>FOREACH (PARA CADA)</h2>
+<p>Versão simplificada do loop for e bem mais fácil de usar com arrays</p>
+
+<?php
+$alunos = ["Denis", "Paulo", "Heloisa"];
+
+foreach( $alunos as $alunos ) {
+?>
+ <p>Nome: <?=$alunos?></p>
+<?php
+}
+?>
+
 
 </body>
 </html>
