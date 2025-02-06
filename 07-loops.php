@@ -40,9 +40,20 @@ do {
 ?>
 
 
-
+<hr>
 
     <h2>FOR (PARA)</h2>
     <p>Executa ações por uma <b>quantidade determinada</b> de vezes.</p>
+<?php
+for($i = 1; $i <= 10; $i++ ){
+?>
+    <p><code>i</code> vale: <b><?=$i?></b></p>
+<?php
+}
+?>
+
+
+
+
 </body>
 </html>
