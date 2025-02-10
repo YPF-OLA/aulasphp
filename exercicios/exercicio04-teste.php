@@ -36,15 +36,7 @@
             color: black;
         }
 
-
-        @media (max-width: 768px) {
-            table {
-                width: 100%;
-            }
-            th, td {
-                padding: 10px;
-            }
-        }
+ 
     </style>
 </head>
 <body>
