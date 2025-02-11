@@ -92,6 +92,29 @@
 
             <p>Mensagem 2: <?=exibirSaudacao("Boa tarde")?></p>
 
+            <hr>
+
+            <h2>Indução de tipos de dados</h2>
+
+            <?php 
+            /*  Indicando que o parametro DEVE ser do tipo inteiro, e que o retorno da função  DEVE ser do tipo string. */
+            function verificarNegativo(int $valor):string {
+                if( $valor < 10 ){
+                    return "é negativo";
+                    
+                } else {
+                    return "não é negativo";
+                }
+            }
+            ?>
+
+            <p>Número 10: <?=verificarNegativo(10)?></p>
+
+
+            <p>Número -10: <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span></p>
+
+            <!-- O código abaixo (tire os comentarios se quiser testar) gera um erro relacionado a indução de tipos (foi dado uma string e era esperado um número inteiro)     <p>Teste de valor/parâmetro errado: <?=verificarNegativo(25.88)?></p>
+ -->
     </div>
 
 
