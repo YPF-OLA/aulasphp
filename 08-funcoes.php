@@ -78,6 +78,19 @@
             <p>João Pedro reprovado...</p>
         <?php }?>
 
+        <h3>Função com parâmetros opcionais</h3>
+
+        <?php 
+        function exibirSaudacao($mensagem, $pessoa = "fulano"){
+            return "Olá, $mensagem $pessoa";
+        }    
+        ?>
+
+            <p>Mensagem 1: <?=exibirSaudacao("Bom dia", "Ygor")?></p>
+
+
+            <p>Mensagem 2: <?=exibirSaudacao("Boa tarde")?></p>
+
     </div>
 
 
