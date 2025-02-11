@@ -144,6 +144,7 @@ $formatarPreco = function(float $valor):string {
 
     <h2>Arrow Function</h2>
 <?php
+// Obs.: esta sintaxe só permite UMA ÚNICA operação ( sem {})
 $dobrarValor = fn($valor) => $valor * 2;
 ?>
 
