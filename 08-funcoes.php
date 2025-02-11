@@ -97,7 +97,7 @@
             <h2>Indução de tipos de dados</h2>
 
             <?php 
-            /*  Indicando que o parametro DEVE ser do tipo inteiro, e que o retorno da função  DEVE ser do tipo string. */
+            /*  Indicando que o parametro DEVE ser do tipo inteiro, e que o retorno da função  DEVE ser do tipo string.  */
             function verificarNegativo(int $valor):string {
                 if( $valor < 10 ){
                     return "é negativo";
@@ -106,6 +106,14 @@
                     return "não é negativo";
                 }
             }
+/* Tipos comuns para uso com indução: 
+string ->  texto/caracteres em gerais
+int ->  número inteiro
+float -> números com casa decimais
+array -> vetor/matriz
+object -> objeto */
+
+
             ?>
 
             <p>Número 10: <?=verificarNegativo(10)?></p>
