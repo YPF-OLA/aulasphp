@@ -99,12 +99,8 @@
             <?php 
             /*  Indicando que o parametro DEVE ser do tipo inteiro, e que o retorno da função  DEVE ser do tipo string.  */
             function verificarNegativo(int $valor):string {
-                if( $valor < 10 ){
-                    return "é negativo";
-                    
-                } else {
-                    return "não é negativo";
-                }
+               
+                return $valor < 0 ? "é negativo" : "não é negativo";  
             }
 /* Tipos comuns para uso com indução: 
 string ->  texto/caracteres em gerais
