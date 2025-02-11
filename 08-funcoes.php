@@ -104,14 +104,15 @@
                     
                 } 
                     return "não é negativo";
-                /* Ao usar Early Return, podemos em algumas situações evitar a necessidade do else (condicionais composta). Neste exemplo, se a condição for TRUE o primeiro return é executado. Se não for, na sequencia será feita o segundo retruen */
+            /* Ao usar Early Return, podemos emalgumas situações evitar anecessidade do else (condicionaiscomposta). Neste exemplo, se acondição for TRUE o primeiro returné executado. Se não for, nasequencia será feita o segundoretruen */
             }
-/* Tipos comuns para uso com indução: 
-string ->  texto/caracteres em gerais
-int ->  número inteiro
-float -> números com casa decimais
-array -> vetor/matriz
-object -> objeto */
+
+            /* Tipos comuns para uso com indução: 
+            string ->  texto/caracteres em gerais
+            int ->  número inteiro
+            float -> números com casa decimais
+            array -> vetor/matriz
+            object -> objeto */
 
 
             ?>
