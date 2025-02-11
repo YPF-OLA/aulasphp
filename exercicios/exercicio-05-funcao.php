@@ -7,10 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-
+ 
     <div class="container">
         <h1></h1>
         <hr>
+
+<?php
+$nota1 = 1;
+$nota2 = 10;
+$nota3 = 1;
+
+// $media = ($nota1 + $nota2 + $nota3) / 3;
+$media = calculandoMedia($nota1, $nota2, $nota3) ;
+  
+   if($media < 7){
+?> 
+    <p>Sua nota é: <?=$media?>, e você foi <span class="badge text-bg-danger">Reprovado!!!</span></p>
+<?php
+   } else {
+    ?>
+        <p>Sua nota é: <?=$media?>, e você foi <samp class="badge text-bg-primary">Aprovado!!!</samp></p>
+    <?php
+   }
+
+?>
+
+<?php
+
+function calculandoMedia($nota1, $nota2, $nota3){
+   
+}
+?>
+<p><?=$resultadoFinal?></p>
     </div>
 
 
