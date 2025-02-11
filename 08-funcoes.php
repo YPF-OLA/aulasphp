@@ -75,7 +75,7 @@
 
         <!-- Usando uma função como parte de uma condição: PRIMEIROS, a função é chamada (e aí ela calcula e retorna), DEPOIS o resultado que ela retornou é comparando com a condição -->
         <?php if( somar(10, 50) <500 ){ ?>
-            <p>João Pedro reprovado...</p>
+            <p>Ygor Faria reprovado...</p>
         <?php }?>
 
         <h3>Função com parâmetros opcionais</h3>
@@ -122,8 +122,34 @@
 
             <p>Número -10: <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span></p>
 
-            <!-- O código abaixo (tire os comentarios se quiser testar) gera um erro relacionado a indução de tipos (foi dado uma string e era esperado um número inteiro)     <p>Teste de valor/parâmetro errado: <?=verificarNegativo(25.88)?></p>
+            <!-- O código abaixo (tire os comentarios se quiser testar) gera um erro relacionado a indução de tipos (foi dado uma string e era esperado um número inteiro)     <p>Teste de valor/parâmetro errado: <//?=verificarNegativo(25.88)?></p>
  -->
+
+            <hr>
+
+            <h2>Função anônima (ou lambda)</h2>
+<?php
+$formatarPreco = function(float $valor):string {
+    $precoFormatado = "R$ ".number_format($valor, 2, ",", ".");
+    return $precoFormatado;
+};
+?>
+
+    <p><?=$formatarPreco(1000)?></p>
+    <p><?=$formatarPreco(1500.88)?></p>
+    <p><?=$formatarPreco(10500.2598)?></p>
+    <p><?=$formatarPreco(-1098)?></p>
+
+    <hr>
+
+    <h2>Arrow Function</h2>
+<?php
+$dobrarValor = fn($valor) => $valor * 2;
+?>
+
+       <p><?=$dobrarValor(10)?></p>
+       <p><?=$dobrarValor(100)?></p>
+
     </div>
 
 
