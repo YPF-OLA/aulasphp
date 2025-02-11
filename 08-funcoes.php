@@ -81,6 +81,7 @@
         <h3>Função com parâmetros opcionais</h3>
 
         <?php 
+        // Parâmetros opcionais possuem algum tipo de atribuição com valor alternativo para o caso de não serem passados na chamada da função. Obs.: sempre devem estar por último na relação de parâmetros da função.
         function exibirSaudacao($mensagem, $pessoa = "fulano"){
             return "Olá, $mensagem $pessoa";
         }    
