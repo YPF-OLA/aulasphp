@@ -38,6 +38,23 @@ function exibirDadosDoAutor(){
         </ul>
 
         <hr>
+
+        <h2>Função com parâmetros (ou argumentos)</h2>
+<?php
+function somar($valor1, $valor2){
+    // Variável de escopo LOCAL: Este tipo de variável existe Somente Dentro da função em que foi declarada.
+    $total = $valor1 + $valor2;
+
+    /* Retornamos o resultado, ou seja, "madandamos para fora" da função o resultado do que ela fez. */
+    return $total;
+}
+?>
+
+        <p>Resultado 1: <?=somar(10, 5)?> </p>
+        <p>Resultado 2: <?=somar(23, 107)?> </p>
+        
+
+
     </div>
 
 
