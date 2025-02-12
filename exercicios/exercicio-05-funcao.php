@@ -35,11 +35,89 @@ $media = calculandoMedia($nota1, $nota2, $nota3) ;
 <?php
 
 function calculandoMedia($nota1, $nota2, $nota3){
-   
+   $resultado = ($nota1 + $nota2 + $nota3) / 3;
+   return $resultado;
 }
+
+function verificarSituacao($valorDaMedia){
+    if ($valorDaMedia < 7) {
+        return "Reprovado";
+        
+    } else {
+        return "Aprovado";
+    }
+    
+}
+
+
+$notafinal = calculandoMedia(7, 7, 7); 
+
+$situacao = verificarSituacao($notafinal);
+
+//echo "Média final: " . number_format($notafinal, 2, ',', '.') . "<br>"; 
+echo "Situação: " . $situacao; 
 ?>
-<p><?=$resultadoFinal?></p>
-    </div>
+
+<hr>
+
+<?php
+
+$alunos = [
+    [
+    "nome" => "Ygor",
+    "nota1" => 1, 
+    "nota2" => 6, 
+    "nota3" => 5, 
+    ],
+    [
+    "nome" => "Felipe",
+    "nota1" => 9, 
+    "nota2" => 6, 
+    "nota3" => 5, 
+    ],
+    [
+    "nome" => "Fernanda",
+    "nota1" => 9, 
+    "nota2" => 2, 
+    "nota3" => 2, 
+    ],
+    [
+    "nome" => "Paula",
+    "nota1" => 2, 
+    "nota2" => 6, 
+    "nota3" => 4, 
+    ],
+    [
+    "nome" => "João",
+    "nota1" => 1, 
+    "nota2" => 6, 
+    "nota3" => 1, 
+    ],
+
+   
+];
+
+
+foreach ($alunos as $aluno) {
+?>
+<hr>
+    <p>Aluno <?=$aluno["nome"]?></p>
+    
+    <p>nota <?=$aluno["nota1"]?></p>
+    
+    <p>nota <?=$aluno["nota2"]?></p>
+    
+    <p>nota <?=$aluno["nota3"]?></p>
+    
+    <p>Media: <?=calculandoMedia($aluno["nota1"],$aluno["nota2"], $aluno["nota3"])?></p>
+
+   <hr>
+<?php
+}
+
+
+?>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
