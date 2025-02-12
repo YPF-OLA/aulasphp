@@ -99,17 +99,20 @@ $alunos = [
 
 
 foreach ($alunos as $aluno) {
+    $medias = calculandoMedia($aluno["nota1"],$aluno["nota2"], $aluno["nota3"]);
+    $situcacaos = verificarSituacao($media);
 ?>
 <hr>
-    <p>Aluno <?=$aluno["nome"]?></p>
+  <h2> <?=$aluno["nome"]?></h2>
+
+    <p>Aluno <?=$medias?></p>
+
+    <p>Situação: <b><?=$situacao?></b></p>
     
-    <p>nota <?=$aluno["nota1"]?></p>
+ 
     
-    <p>nota <?=$aluno["nota2"]?></p>
-    
-    <p>nota <?=$aluno["nota3"]?></p>
-    
-    <p>Media: <?=calculandoMedia($aluno["nota1"],$aluno["nota2"], $aluno["nota3"])?></p>
+
+   
 
    <hr>
 <?php
