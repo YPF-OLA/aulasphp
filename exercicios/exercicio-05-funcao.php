@@ -41,16 +41,16 @@ function calculandoMedia($nota1, $nota2, $nota3){
 
 function verificarSituacao($valorDaMedia){
     if ($valorDaMedia < 7) {
-        return "Reprovado";
+        return '<samp class="badge text-bg-danger">Reprovado!!!</samp>';
         
     } else {
-        return "Aprovado";
+        return '<samp class="badge text-bg-primary">Aprovado!!!</samp>';
     }
     
 }
 
 
-$notafinal = calculandoMedia(7, 7, 7); 
+$notafinal = calculandoMedia(1, 7, 13); 
 
 $situacao = verificarSituacao($notafinal);
 
