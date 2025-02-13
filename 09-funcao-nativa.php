@@ -86,7 +86,7 @@ extract($aluno);
     <p>Somar valores de um array numérico</p>
 
 <?php
-$valores = [10, 20, 50, 1000, 50110];
+$valores = [10, 20, 50, 1000, 500];
 $total = array_sum($valores);
 ?>
         <p>Soma dos valores do array: <b><?=$total?></b></p>
@@ -103,6 +103,21 @@ $produtosUnicos = array_unique($produtos);
 ?>
 <pre><?=var_dump($produtos)?></pre>
 <pre><?=var_dump($produtosUnicos)?></pre>
+<hr>
+
+    <h2>numéricas</h2>
+    <h3><code>min(), max(), round()</code></h3>
+
+<?php
+$valorQualquer = 1259.75;
+?>
+        <p>Menor valor: <?=min($valores)?></p>
+        <p>Maior valor: <?=max($valores)?></p>
+        <p>Arredondamento: <?=round($valorQualquer)?></p>
+
+
+
+
 
     </div>
 
