@@ -1,3 +1,4 @@
+<?php include "recursos.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,23 @@
     <div class="container">
         <h1>Modalarização e Inclusão de Recursos</h1>
         <hr>
+        <h2> <?=ESCOLA?> </h2>
+        <p>Estamos fazendo o curso de <?=$curso?> </p>
+        <ul>
+            <?php foreach($tecnologias as $tecnologia) {?>
+                <li><?=$tecnologia?></li>
+                <?php } ?>
+        </ul>
+
+<hr>
+        <p>O aluno Fulano de tal tem 60 anos e é <?=verificarIdade(60)?> de idade</p>
+
+
+
+
+
+
+
     </div>
 
 

@@ -1,6 +1,6 @@
 <?php
-define("ESCOLA", "Senac"); // constante
-$curso = "Téc. Informatica para Internet"; // variável
+define("ESCOLA", "Senac Penha"); // constante
+$curso = "Téc. Informatica para Internet."; // variável
 $tecnologias = ["HTML", "CSS", "JS"]; // array
 
 // função
