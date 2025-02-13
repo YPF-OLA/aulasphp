@@ -22,7 +22,29 @@ $textoSemEspaço = trim($texto);
 <pre><?=var_dump($textoSemEspaço)?></pre>
     <hr>
 
-    
+    <h3><code>str_replace()</code></h3>
+    <p>Permite substituir partes de uma string.</p>
+<?php
+$fraseFeia = "Paulo é um bobão e xarope";
+$fraseBunitinha = str_replace(
+    ["bobão", "xarope"],
+    ["b****", "💣"],
+    $fraseFeia
+)
+?>
+
+        <p><?=$fraseFeia?></p>
+        <p><?=$fraseBunitinha?></p>
+
+
+        <h3><code>explode()</code></h3>
+        <p>Transforma uma string em um array</p>
+<?php
+$textosLinguagens = "HTML,CSS,JS,PHP,SQL";
+$arrayLinguagens = explode(",", $textosLinguagens)
+?>
+<pre><?=var_dump($textosLinguagens)?></pre>
+<pre><?=var_dump($arrayLinguagens)?></pre>
 
 
 
