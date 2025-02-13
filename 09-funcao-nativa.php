@@ -114,11 +114,26 @@ $valorQualquer = 1259.75;
         <p>Menor valor: <?=min($valores)?></p>
         <p>Maior valor: <?=max($valores)?></p>
         <p>Arredondamento: <?=round($valorQualquer)?></p>
+<hr>
+
+        <h2>Filtros</h2>
+        <p>Recursos/Funções/Constantes de análise e limpeza de dados aplicados através das funções <code>filter_var()</code> e <code>filter_input()</code></p>
+
+        <h3>Validação</h3>
+
+<?php
+// Exemplo de email estruturado erroneamente
+$emailErrado = "ygor.com.br";
+$emailCorreto = "ygor@senac12.com.br"
+?>
+        <p><?=var_dump( filter_var($emailErrado, FILTER_VALIDATE_EMAIL))?></p>
+        <p><?=var_dump( filter_var($emailCorreto, FILTER_VALIDATE_EMAIL))?></p>
 
 
 
 
 
+        
     </div>
 
 
