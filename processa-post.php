@@ -11,8 +11,24 @@
     <div class="container">
         <h1>Processamento usando POST</h1>
         <hr>
-        <pre><?=var_dump($_POST)?></pre>
-    </div>    
+<?php
+$nome = $_POST["nome"];
+$email = $_POST["email"];
+$idade = $_POST["idade"];
+$mensagem = $_POST["mensagem"];
+?>
+
+<h2>Dados:</h2>
+<ul>
+    <li>Nome: <?=$nome?></li>
+    <li>E-mail: <?=$email?></li>
+    <li>Idade: <?=$idade?></li>
+    <li>Mensagem: <?=$mensagem?></li>
+</ul>
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
