@@ -16,13 +16,32 @@ $nome = $_POST["nome"];
 $email = $_POST["email"];
 $idade = $_POST["idade"];
 $mensagem = $_POST["mensagem"];
+
+// Capturando os options
+//$interesses = isset($_POST["interesses"]) ? $_POST["interesses"] : [];
+
+$interesses = $_POST["interesses"] ?? [];
 ?>
 
+<!-- Exibindo -->
 <h2>Dados:</h2>
 <ul>
     <li>Nome: <?=$nome?></li>
     <li>E-mail: <?=$email?></li>
     <li>Idade: <?=$idade?></li>
+
+    <li>Interesses - Usando <code>implode()</code>: 
+        <?=implode(",", $interesses)?>
+    </li>
+
+    <li>Interesses - usando <code>foreach()</code>: 
+        <ul>
+            <?php foreach($interesses as $interesse){ ?>
+                <li><?=$interesse?></li>
+            <?php } ?>
+        </ul>
+    </li>
+
     <li>Mensagem: <?=$mensagem?></li>
 </ul>
 
