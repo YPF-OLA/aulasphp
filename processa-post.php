@@ -21,6 +21,8 @@ $mensagem = $_POST["mensagem"];
 //$interesses = isset($_POST["interesses"]) ? $_POST["interesses"] : [];
 
 $interesses = $_POST["interesses"] ?? [];
+
+$informativos = $_POST["informativos"] ;
 ?>
 
 <!-- Exibindo -->
@@ -29,6 +31,7 @@ $interesses = $_POST["interesses"] ?? [];
     <li>Nome: <?=$nome?></li>
     <li>E-mail: <?=$email?></li>
     <li>Idade: <?=$idade?></li>
+    <li>Receber informativos: <?=$informativos?></li>
 
 
 <!-- Usamos o empty com inversão de lógica (operador ! de negação). Portanto   -->
@@ -45,6 +48,7 @@ $interesses = $_POST["interesses"] ?? [];
         </ul>
     </li>
 <?php } ?>
+
     <li>Mensagem: <?=$mensagem?></li>
 </ul>
 
