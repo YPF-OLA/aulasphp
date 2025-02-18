@@ -12,41 +12,52 @@
 
 <body>
 <div class="container">
-    <h1>Formulário básico</h1>
-    <hr>
-    <form action="processa-post.php" method="post">
-        <div class="mb-3">
-            <label for="nome" class="form-label">Nome:</label>
-            <input class="form-control" type="text" name="nome" id="nome">
-        </div>
-        <div class="mb-3">
-            <label for="email">E-mail:</label>
-            <input class="form-control" type="email" name="email" id="email">
-        </div>
-        <div class="mb-3">
-            <label for="idade">Idade:</label>
-            <input class="form-control" type="number" name="idade" id="idade" min="1" max="100">
-        </div>
+<h1>Formulário básico</h1>
+<hr>
+<form action="processa-post.php" method="post">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input class="form-control" type="text" name="nome" id="nome">
+    </div>
+    <div class="mb-3">
+        <label for="email">E-mail:</label>
+        <input class="form-control" type="email" name="email" id="email">
+    </div>
+    <div class="mb-3">
+        <label for="idade">Idade:</label>
+        <input class="form-control" type="number" name="idade" id="idade" min="1" max="100">
+    </div>
 
-        <div class="mb-3">
-            <p>Interesses:</p>
-            <input type="checkbox" name="interesses[]" id="html" value="HTML">
-            <label for="html">HTML</label>
+    <div class="mb-3">
+        <p>Interesses:</p>
+        <input type="checkbox" name="interesses[]" id="html" value="HTML">
+        <label for="html">HTML</label>
 
-            <input type="checkbox" name="interesses[]" id="css" value="CSS">
-            <label for="css">CSS</label>
+        <input type="checkbox" name="interesses[]" id="css" value="CSS">
+        <label for="css">CSS</label>
 
-            <input type="checkbox" name="interesses[]" id="js" value="JS">
-            <label for="js">JS</label>
-        </div>
+        <input type="checkbox" name="interesses[]" id="js" value="JS">
+        <label for="js">JS</label>
+    </div>
 
-        <div class="mb-3">
-            <label for="mensagem">Mensagem:</label>
+    <div class="mb-3">
+        <p>Deseja receber informativos?</p>
 
-            <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit" name="enviar">Enviar dados</button>
-        </form>
+        <input type="radio" name="informativos" id="sim" value="Sim">
+        <label for="sim">Sim</label>
+
+        <input type="radio" name="informativos" id="nao" value="Não">
+        <label for="nao">Não</label>
+    </div>
+
+
+    <div class="mb-3">
+        <label for="mensagem">Mensagem:</label>
+
+        <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit" name="enviar">Enviar dados</button>
+    </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
