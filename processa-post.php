@@ -11,7 +11,13 @@
     <div class="container">
         <h1>Processamento usando POST</h1>
         <hr>
-<?php
+
+        <?php  
+if( empty($_POST["nome"]) || empty($_POST["email"]) ) { 
+?> <p class="alert alert-danger">Por Favor Preencha os campos <b><u>NOME</u></b> e <b><u>E-MAIL</u></b> !!! </p>
+
+<?php } else {  
+
 $nome = $_POST["nome"];
 $email = $_POST["email"];
 $idade = $_POST["idade"];
@@ -33,8 +39,10 @@ $informativos = $_POST["informativos"] ;
     <li>Idade: <?=$idade?></li>
     <li>Receber informativos: <?=$informativos?></li>
 
-
+    
 <!-- Usamos o empty com inversão de lógica (operador ! de negação). Portanto   -->
+ 
+
     <?php if( !empty($interesses) ) { ?>
     <li>Interesses - Usando <code>implode()</code>: 
         <?=implode(",", $interesses)?>
@@ -53,8 +61,11 @@ $informativos = $_POST["informativos"] ;
 </ul>
 
 
+<?php
+}
+?>
 
-            
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
